@@ -211,11 +211,9 @@ double Quadratic::determinant() const
     }
 
     double det = 0;
-    int sign = 1;
     for (int i = 0; i < row; i++)
     {
         det += getValue(i, 1) * cofactor(i, 1);
-        sign *= -1;
     }
 
     return det;
